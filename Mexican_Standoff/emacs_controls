@@ -1,0 +1,16 @@
+
+C-x C-s : saves file
+C-x C-c : quit emacs
+C-k : cut
+C-y : paste
+C-space : highlight region
+M-w : copies region to clipboard
+C-w : Cuts region to clipboard
+C-q : quit your command
+C-a : beginning of line
+C-e : end of line
+M-> : end of buffer
+M-< : beginning of buffer
+C-/ : undo
+C-g C-/ : redo
+
