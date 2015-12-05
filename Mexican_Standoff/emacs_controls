@@ -13,4 +13,11 @@ M-> : end of buffer
 M-< : beginning of buffer
 C-/ : undo
 C-g C-/ : redo
+C-q tab : insert a tabulation
+
+pour faire M : appuyer sur echap
+pour acceder au package.el : M-x package-list-packages
+i pour activer un package
+d pour desactiver 
+x pour executer l'activation / desactivation
 

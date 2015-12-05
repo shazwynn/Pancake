@@ -1,0 +1,11 @@
+(require 'package)
+(package-initialize)
+(add-to-list 'package-archives
+              '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-hook 'c-mode-common-hook '(lambda ()
+								(local-set-key (kbd "RET") 'newline-and-indent)))
+   (defun autopair-insert-opening ()
+	     (interactive)
+		      (when (autopair-pair-p)
+			          (setq autopair-action (list 'opening (autopair-find-pair) (point))))
+			       (autopair-fallback))
