@@ -27,10 +27,17 @@
 
 ; Pour afficher les trailing whitespaces
 (require 'whitespace)
-(global-whitespace-trailing t)
+;(global-whitespace-mode 1)
+;(global-whitespace-toggle-options t)
+(setq-default show-trailing-whitespace t)
 ;(setq show-tabs-whitespaces nil)
 ;(whitespace-global-mode) ;; enable autopair in all buffers
 ;(autoload 'global-whitespace)
 ;(setq whitespace-style '(face empty tabs lines-tail trailing))
 ;(global-whitespace-mode t)'
 ;(setq-default show-trailing-whitespace nil)
+
+; Backup directory
+(setq backup-directory-alist `(("." . "~/.emacs.d")))
+;(setq auto-save-file-name-transforms `((".*" , "~/.emacs.d" t)))
+
