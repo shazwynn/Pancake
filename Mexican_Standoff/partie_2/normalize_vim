@@ -1,0 +1,23 @@
+// couper les declarations de variables
+4 j 3 d d
+
+// coller
+H j p
+
+// ajouter un espace apres le while
+9 e a espace echap
+
+// ajouter un espaces apres le break
+/ k enter a espace echap
+
+// enlever les espaces en fin de ligne
+3 j l D
+
+// corriger les indentations
+g g = G
+
+// ajouter le header
+Fn-F1
+
+// sauvegarder
+:w
