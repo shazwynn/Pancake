@@ -1,3 +1,4 @@
+
 (setq default-tab-width 4)
 
 ; Afficher le numéro de colonne
@@ -13,9 +14,11 @@
 (add-to-list 'package-archives
               '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'load-path "/nfs/zfs-student-2/users/agrele/.emacs.d/elpa/autopair-0.3/") ;; comment if autopair.el is in standard load path 
+
 (require 'autopair)
 (autopair-global-mode) ;; enable autopair in all buffers
 (add-to-list 'load-path "/nfs/zfs-student-2/users/agrele/.emacs.d/elpa/auto-indent-mode-0.126/") ;; comment if autopair.el is in standard load path 
+
 (require 'auto-indent-mode)
 ;;(require 'auto-indent-tabs-mode)
 (auto-indent-global-mode) ;; enable autopair in all buffers
@@ -37,7 +40,13 @@
 ;(global-whitespace-mode t)'
 ;(setq-default show-trailing-whitespace nil)
 
+;just use regexp for finding double spaces and change color instead of using highlight
+
 ; Backup directory
 (setq backup-directory-alist `(("." . "~/.emacs.d")))
 ;(setq auto-save-file-name-transforms `((".*" , "~/.emacs.d" t)))
 
+
+(add-hook 'c-mode-hook
+ (lambda() (highlight-regexp "  " "hi-medium sea green")
+  ))

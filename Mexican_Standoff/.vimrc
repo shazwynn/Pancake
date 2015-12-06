@@ -78,3 +78,8 @@ match ExtraWhitespace /\s\+$\| \+\ze\s/
 " "   %) end of width specification
 " "set statusline=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 set statusline=%<\ %f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ %)
+
+" enregistrer les fichiers swap, backup et undo dans .vim
+set undodir=~/.vim//
+set backupdir=~/.vim//
+set directory=~/.vim//
